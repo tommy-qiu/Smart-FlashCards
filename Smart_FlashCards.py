@@ -44,7 +44,7 @@ class Card:
 
 
 
-deck_folders = [Deck("tester deck",[Card("Deck One","4*4","16"), Card("Deck Two","sqrt(4)","2")])]
+deck_folders = [Deck("tester deck(Math)",[Card("Deck One","4*4","16"), Card("Deck Two","sqrt(4)","2")])]
 
 
 
@@ -88,7 +88,7 @@ class Smart_FlashCard_App(tk.Tk):
 class Main_Menu(tk.Frame):
     def __init__(self,parent,controller):
         tk.Frame.__init__(self,parent)
-        self._folder = tk.Button(master = self,text = "Folder", command = lambda: controller.show_frame("Folders"))
+        self._folder = tk.Button(master = self,text = "Deck Folder", command = lambda: controller.show_frame("Folders"))
         self._folder.grid(row = 0, column = 0, columnspan = 3)
         self._stats = tk.Button(master = self, text= "Current Statistics")
         self._stats.grid(row = 0, column = 3, columnspan = 3)
